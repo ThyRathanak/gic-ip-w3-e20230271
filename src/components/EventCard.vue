@@ -21,11 +21,11 @@ const isFull = computed(() => left.value === 0);
 const almostFull = computed(
   () => left.value > 0 && left.value <= 5
 );
-
 function bookEvent() {
   emit("book", prop.event.id);
 }
 </script>
+
 
 <template>
   <!-- TODO 4: replace the hard-coded text with the event's data (use formatDate) -->
